@@ -13,11 +13,11 @@ class ActionWeather(Action):
     def run(self, dispatcher, tracker, domain):
         city = tracker.get_slot('location')
         #print(city)
-        #api_key = "eb31f2106da3b2188daced4d83ce4654"
+        #api_key = "eb31f2106da3b2aced4d84"
         
         #skeleton = "https://api.openweathermap.org/data/2.5/weather?"
         #complete_url = skeleton + "q=" + city + "&APPID=" + api_key
-        complete_url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=eb31f2106da3b2188daced4d83ce4654"
+        complete_url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=eb31f2106de4654"
         #complete_url = "https://api.openweathermap.org/data/2.5/weather?q=berlin&APPID=eb31f2106da3b2188daced4d83ce4654"  #this is giving correct output
         response = requests.get(complete_url)
 
